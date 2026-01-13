@@ -14,6 +14,7 @@ Spring Boot REST API for managing products using layered architecture
 ## API Endpoints
 - POST /api/v1/products
 - GET /api/v1/products/{id}
+- GETALL /api/v1/products
 - PUT /api/v1/products/{id}
 - DELETE /api/v1/products/{id}
 
@@ -30,6 +31,9 @@ The application was built and started using Maven Wrapper.
 
 ### Get Product by ID
 ![GET](Screenshots/02-postman-get.png)
+
+### Get ALL Products
+![GET ALL](Screenshots/06-postman-getall.png)
 
 ### Update Product
 ![PUT](Screenshots/03-postman-put.png)

@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import pl.edu.vistula.final_project.product.api.request.ProductRequest;
 import pl.edu.vistula.final_project.product.api.response.ProductResponse;
 import pl.edu.vistula.final_project.product.service.ProductService;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/products")
@@ -37,4 +38,10 @@ public class ProductController {
     public void delete(@PathVariable Long id) {
         productService.delete(id);
     }
+
+    @GetMapping
+    public List<ProductResponse> getAll() {
+        return productService.getAll();
+    }
+
 }
