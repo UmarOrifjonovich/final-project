@@ -17,6 +17,12 @@ Spring Boot REST API for managing products using layered architecture
 - PUT /api/v1/products/{id}
 - DELETE /api/v1/products/{id}
 
+### Application Startup (PowerShell)
+
+The application was built and started using Maven Wrapper.
+
+![PowerShell Run](Screenshots/powershell-run.png)
+
 ## Functionality Proof (Postman)
 
 ### Create Product
